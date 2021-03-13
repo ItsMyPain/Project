@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-D:/untitled/figure.cpp
+D:/CPP/Project/figure.cpp
 iostream
 -
 cmath
 -
 
-D:/untitled/main.cpp
+D:/CPP/Project/main.cpp
 iostream
 -
 string
 -
 user_interface.cpp
-D:/untitled/user_interface.cpp
+D:/CPP/Project/user_interface.cpp
 
-D:/untitled/user_interface.cpp
+D:/CPP/Project/user_interface.cpp
 iostream
 -
 string
 -
 figure.cpp
-D:/untitled/figure.cpp
+D:/CPP/Project/figure.cpp
 
