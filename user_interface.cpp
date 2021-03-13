@@ -8,7 +8,7 @@ using namespace std;
 class User_Interface{
 private:
     string input;
-    string commands[15] = {"create", "get", "perimeter", "perimtr", "area", "triangle", "square", "rectangle", "rhombus", "circle", "angles", "angle", "exit", "info", " "};
+    string commands[15] = {"create", "get", "perimeter", "perimetr", "area", "triangle", "square", "rectangle", "rhombus", "circle", "angles", "angle", "exit", "info", " "};
     int a[10];
     void clean(){
         input = " ";
@@ -35,7 +35,7 @@ private:
             if(a[0]*a[0]+a[1]*a[1] == a[2]*a[2]) *G = new Rectangular(a[0], a[1]);
             else if(a[2]*a[2]+a[1]*a[1] == a[0]*a[0]) *G = new Rectangular(a[2], a[1]);
             else if(a[0]*a[0]+a[2]*a[2] == a[1]*a[1]) *G = new Rectangular(a[0], a[2]);
-            else if(a[0]==a[1] && a[1]==a[2])    *G = new Equilateral(a[0],a[1]);
+            else if(a[0]==a[1] && a[1]==a[2])    *G = new Equilateral(a[0]);
             else if(a[0]==a[1] && a[1]!=a[2])    *G = new Isosceles(a[0],a[2]);
             else if(a[0]==a[2] && a[1]!=a[2])    *G = new Isosceles(a[0],a[1]);
             else if(a[1]==a[2] && a[1]!=a[0])    *G = new Isosceles(a[1],a[0]);

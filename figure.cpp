@@ -13,13 +13,13 @@ public:
     P = 0;
     cout<<endl<<"### Your figure created"<<endl;
     }
-    void getAngles(){
+    void getAngles() const{
         cout<<endl<<"### Angles = "<<n<<endl<<endl;
     }
-    void getArea(){
+    void getArea() const{
         cout<<endl<<"### Area = "<<S<<endl<<endl;
     }
-    void getPerimetr(){
+    void getPerimetr() const{
         cout<<endl<<"### Perimeter = "<<P<<endl<<endl;
     }
 
@@ -72,11 +72,8 @@ public:
 class Triangles: public Figure{
 public:
     Triangles() {
-    n = 3;
-    cout<<"### Your figure with 3 angles created"<<endl;
-    }
-    virtual void getArea(){
-        cout<<"### Area = "<<S<<endl<<endl;
+        n = 3;
+        cout << "### Your figure with 3 angles created" << endl;
     }
 };
 
@@ -86,10 +83,6 @@ public:
     S = (a * b)/2;
     P = a + b + sqrt(a * a + b * b);
     cout<<"### Your rectangular triangle created"<<endl<<endl;
-    }
-
-    virtual void getArea(){
-        cout<<"### Area = "<<S<<endl<<endl;
     }
 };
 
@@ -104,7 +97,7 @@ public:
 
 class Equilateral: public Triangles{
 public:
-    Equilateral(float a, float b):Triangles() {
+    Equilateral(float a):Triangles() {
     S = a * a * sqrt(3)/4;
     P = 3 * a;
     cout<<"### Your equilateral triangle created"<<endl<<endl;

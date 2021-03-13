@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/untitled/figure.cpp
+iostream
+-
+cmath
+-
+
+D:/untitled/main.cpp
+iostream
+-
+string
+-
+user_interface.cpp
+D:/untitled/user_interface.cpp
+
+D:/untitled/user_interface.cpp
+iostream
+-
+string
+-
+figure.cpp
+D:/untitled/figure.cpp
+
