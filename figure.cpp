@@ -98,7 +98,7 @@ public:
 class Equilateral: public Triangles{
 public:
     Equilateral(float a):Triangles() {
-    S = a * a * sqrt(3)/4;
+    S = a * a * float(sqrt(3)/4);
     P = 3 * a;
     cout<<"### Your equilateral triangle created"<<endl<<endl;
     }
@@ -124,8 +124,8 @@ public:
 class Cricle: public Cricles{
 public:
     Cricle (float a):Cricles() {
-    S = 3.14 * a * a;
-    P = 2 * 3.14 * sqrt((a * a + a * a) / 2);
+    S = float(3.14) * a * a;
+    P = 2 * float(3.14) * sqrt((a * a + a * a) / 2);
     cout<<"### Your cricle created"<<endl<<endl;
     }
 };
@@ -133,8 +133,8 @@ public:
 class Ellipse: public Cricles{
 public:
     Ellipse (float a, float b):Cricles() {
-    S = 3.14 * a * b;
-    P = 2 * 3.14 * sqrt((a * a + b * b) / 2);
+    S = float(3.14) * a * b;
+    P = 2 * float(3.14) * sqrt((a * a + b * b) / 2);
     cout<<"### Your ellipse created"<<endl<<endl;
     }
 };
